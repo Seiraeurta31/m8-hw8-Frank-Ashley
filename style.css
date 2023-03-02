@@ -35,11 +35,11 @@ header {
   border-bottom: var(--secondary-color) 6px solid;
 }
 
-/* header link transition! */
+/* ************header link transition! *************/
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 header a:hover {
@@ -47,13 +47,24 @@ header a:hover {
   text-decoration: none;
   text-shadow: 2px 2px 4px rgb(82, 81, 81);
 }
-/* end header link transition */
+/* ************end header link transition *************/
 
-/* article link transitions */
+
+
+/* ************ article link transitions ************ */
 main a {
   color: var(--danger-color);
+  transition: 0.25s;
 }
-/* end article link transitions */
+
+main a:hover {
+  background-color: #ffea4d;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  font-size: 110%;
+  border-radius: 9px;
+}
+/* ************ end article link transitions ************ */
 
 main > article, nav{
   max-width: 1200px;
@@ -110,13 +121,13 @@ section.hero > button {
 }
 
 
-/* button link transitions */
+/* ************button link ANIMATION ************** */
 
 section.hero > button:hover {
   animation-iteration-count: infinite;
   background-color: rgb(188, 20, 146);
   color: white;
-  animation: rainbow 5s infinite;
+  animation: rainbow 1.5s infinite;
   box-shadow: 3px 3px 6px rgb(70, 70, 70);
   text-shadow: 1.5px 1.5px 4px rgb(40, 40, 40);  
 }
@@ -129,7 +140,7 @@ section.hero > button:hover {
     80% { background-color: rgb(21, 73, 186); }
     100% { background-color: rgb(112, 21, 186); }
 }
-/* button link transitions */
+/* ************button link ANIMATION ************ */
 
 main article {
   padding: 48px 96px;
